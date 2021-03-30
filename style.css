@@ -1,0 +1,131 @@
+@font-face{
+    font-family: "WorkSans";
+    src: url("./Fonts/WorkSans-VariableFont_wght.ttf") format("truetype");
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body, html{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    font-family: "WorkSans";
+}
+
+/* --------------------------------------------- */
+
+.all{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(236, 238, 240);
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    height: 50%;
+    width: 30%;
+    border-radius: 0.5rem;
+    background-color: #fff;
+}
+
+.main-header{
+    background: url(./background.jpg) content-box;
+    width: 100%;
+    height: 28%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-top-left-radius: inherit;
+    border-top-right-radius: inherit;
+}
+
+.main-header > h2{
+    color: white;
+}
+
+.login-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-top: 1.5rem;
+}
+
+.username-area{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+}
+
+.password-area{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+    margin-top: 0.8rem;
+}
+
+.username-area > label, .password-area > label{
+    width: 25%;
+    margin-left: 2rem;
+}
+
+.username-area > input, .password-area > input{
+    border: none;
+    outline: none;
+    margin-right: 2rem;
+    border-bottom: solid gray 1px;
+    width: 50%;
+    height: 2rem;
+}
+
+.remember{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 100%;
+    font-size: x-small;
+    margin-top: 0.5rem;
+}
+
+.remember > label{
+    margin-right: 2rem;
+}
+
+.remember > a{
+    text-decoration: none;
+}
+
+#checkbox{
+    margin-left: 40%;
+}
+
+.login-button{
+    margin-top: 1rem;
+    margin-left: 0.6rem;
+    background-color: rgb(111, 181, 84);
+    color: white;
+    width: 6rem;
+    border: none;
+    outline: none;
+    border-radius: 1rem;
+    height: 1.8rem;
+}
