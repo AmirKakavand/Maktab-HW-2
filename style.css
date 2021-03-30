@@ -31,7 +31,7 @@ body, html{
     flex-direction: column;
     justify-content: start;
     align-items: center;
-    height: 50%;
+    height: 20rem;
     width: 30%;
     border-radius: 0.5rem;
     background-color: #fff;
