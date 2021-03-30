@@ -78,5 +78,11 @@ body, html{
 
 .sign-up > a{
     text-decoration: none;
-    color: rgb(111, 181, 84);
+    color: rgb(92, 187, 54);
+}
+
+.sign-up > a:hover{
+    text-decoration: none;
+    font-weight: 800;
+    color: rgb(48, 201, 10);
 }
