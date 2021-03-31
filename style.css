@@ -1,0 +1,158 @@
+@font-face{
+    font-family: "WorkSans";
+    src: url("./Fonts/WorkSans-VariableFont_wght.ttf") format("truetype");
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body, html{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    font-family: "WorkSans";
+}
+
+/* --------------------------------------------- */
+
+.all{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.all::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-image: url("./backgroung.jpg");
+    background-size: cover;
+    background-position: top center;
+    opacity: 0.5;
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    width: 21rem;
+    height: 28rem;
+    border-radius: 0.4rem;
+    background: rgb(140,44,191);
+    background: linear-gradient(0deg, rgba(140,44,191,1) 0%, rgba(109,125,227,1) 46%, rgba(94.5,169,247,1) 100%);
+    z-index: 1;
+    position: relative;
+}
+
+.logo-container{
+    margin-top: 2rem;
+    margin-bottom: 8px;
+    background-color: #fff;
+    width: 4.5rem;
+    height: 4.5rem;
+    border-radius: 3rem;
+}
+
+.logo{
+    width: 100%;
+}
+
+.login{
+    color: white;
+    font-size: 30px;
+    margin-bottom: 1rem;
+}
+
+.username-area{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    margin: 1.5rem auto;
+    border-bottom: solid rgba(207, 204, 204, 0.527) 2px;
+    background-color: rgba(255, 255, 255, 0);
+    width: 80%;
+}
+
+.user, .pass{
+    border: none;
+    outline: none;
+    width: 100%;
+    background-color: inherit;
+    color: white;
+}
+::placeholder {
+    color: white;
+    opacity: 1;
+}
+
+#person-icon{
+    color: white;
+    background-color: inherit;
+    padding: 5px 10px 5px 3px;
+}
+
+
+.password-area{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    width: 80%;
+    border-bottom: solid rgba(207, 204, 204, 0.527) 2px;
+    background-color: rgba(255, 255, 255, 0);
+}
+
+#lock-icon{
+    color: white;
+    background-color: inherit;
+    padding: 5px 10px 5px 3px;
+}
+
+.checkbox{
+    cursor: pointer;
+}
+
+.remember{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    width: 80%;
+    margin: 1.5rem auto;
+    cursor: pointer;
+}
+
+.login-button{
+    background-color: #fff;
+    width: 5rem;
+    border: none;
+    outline: none;
+    border-radius: 1rem;
+    height: 1.65rem;
+    color: rgb(125, 84, 209);
+    transition: 0.5s;
+}
+
+.login-button:hover{
+    transition: 1s;
+    font-size: medium;
+    color: white;
+    background-color: inherit;
+    border: solid rgba(194, 192, 192, 0.582) 1px;
+    cursor: pointer;
+}
+
+.forgot-password{
+    color: white;
+    text-decoration: none;
+    position: absolute;
+    bottom: 1rem;
+}
