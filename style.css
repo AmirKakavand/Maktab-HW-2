@@ -1,0 +1,171 @@
+@font-face{
+    font-family: "WorkSans";
+    src: url("./Fonts/WorkSans-VariableFont_wght.ttf") format("truetype");
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body, html{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    font-family: "WorkSans";
+}
+
+/* --------------------------------------------- */
+
+.all{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+.all a{
+    text-decoration: none;
+}
+
+.main{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    height: 80%;
+    background-color: #34ADFF;
+    background-image: -webkit-linear-gradient(170deg, rgb(254, 186, 51) 52%, rgb(37, 95, 106) 35%);
+}
+
+.main-left > img{
+    width: 60%;
+}
+
+.main-left, .main-right{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+    position: relative;
+}
+
+.login{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 58%;
+    height: 55%;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 20px 1px rgb(148, 148, 148);
+    position: relative;
+}
+
+.members{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    box-shadow: 0 2px 3px rgba(180, 179, 179, 0.651);
+    padding: 8px 4px;
+}
+/* 
+.main-right div{
+    border: solid black 2px;
+} */
+
+.signin-area{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    width: 100%;
+    height: fit-content;
+    margin-top: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.username-area{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 85%;
+}
+
+.password-area{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 85%;
+}
+
+input{
+    margin: 0.5rem auto;
+    padding-left: 10px;
+    margin: 0.8rem auto;
+    width: 100%;
+    height: 2.5rem;
+    color: rgb(32, 150, 173);
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: whitesmoke;
+}
+#eye{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: whitesmoke;
+    width: 2rem;
+    height: 2.5rem;
+    margin-left: -1rem;
+}
+#eye:hover{
+    cursor: pointer;
+}
+
+.signin-area > button{
+    border: none;
+    outline: none;
+    color: white;
+    background-color: rgb(37, 95, 106);
+    cursor: pointer;
+    border-radius: 4px;
+    position: absolute;
+    bottom: 1rem;
+    width: 85%;
+    height: 2.5rem;
+    transition: 0.5s;
+}
+.signin-area > button:hover{
+    background-color: rgb(52, 140, 158);
+    transition: 0.8s;
+}
+
+.accounting{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 2rem;
+}
+
+.accounting > div{
+    color: white;
+}
+
+.accounting > a {
+    color: rgb(37, 95, 106);
+    font-weight: 700;
+}
