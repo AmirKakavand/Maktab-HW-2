@@ -113,7 +113,6 @@ nav{
 }
 
 .post{
-    border: solid black 1px;
     width: 18rem;
     height: 25rem;
     margin: 4rem 1rem 0;
@@ -183,7 +182,6 @@ nav{
 }
 
 .post-caption{
-    border: solid black 1px;
     width: 95%;
     color: gray;
     margin-top: 0;
